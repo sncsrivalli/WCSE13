@@ -1,0 +1,178 @@
+package basicSeleniumConcepts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FacebookApp {
+
+	public static void main(String[] args) {
+		
+		String key = "webdriver.chrome.driver";
+		String value = "./chromedriver.exe";
+		
+		System.setProperty(key, value);
+		
+		//Launch chrome browser
+		WebDriver driver = new ChromeDriver();
+		
+		//Navigate to the application
+		driver.get("https://www.facebook.com/");
+		
+		//Fetch the title of web page
+		String title = driver.getTitle();
+		System.out.println(title);
+		
+		//Fetch the url of current application
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		
+		//Fetch the page source of the web page
+		String pageSource = driver.getPageSource();
+		System.out.println(pageSource);
+		
+		//close the browser
+		driver.quit();
+
+	}
+
+}
+
+============================================================================================================================
+package basicSeleniumConcepts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebPageTitleVerification {
+
+	public static void main(String[] args) {
+		
+		//Launch the chrome browser
+		WebDriver driver = new ChromeDriver();
+		
+		//Navigate to the application
+		driver.get("https://accounts.google.com/");
+		
+		//Fetch the title of the page
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "Gmail";
+		
+		//Verification of web page title
+		if(actualTitle.equals(expectedTitle)) {
+			System.out.println("Test Case Passed");
+		}
+		else
+			System.out.println("Test Case is Failed");
+		
+		//close the browser
+		driver.quit();
+
+	}
+
+}
+
+============================================================================================================================
+package basicSeleniumConcepts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebPageSourceVerification {
+
+	public static void main(String[] args) {
+		// Launch the chrome browser
+		WebDriver driver = new ChromeDriver();
+
+		// Navigate to the application
+		driver.get("https://www.facebook.com/");
+
+		// Fetch the page source of the page
+		String actualPageSource = driver.getPageSource();
+		String expectedPageSource = "Facebook";
+
+		// Verification of web page title
+		if (actualPageSource.contains(expectedPageSource)) {
+			System.out.println("Test Case Passed");
+		} else
+			System.out.println("Test Case is Failed");
+
+		// close the browser
+		driver.quit();
+
+	}
+
+}
+
+============================================================================================================================
+package basicSeleniumConcepts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WindowManagement {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		//Launch the browser
+		WebDriver driver = new ChromeDriver();
+		
+		//Maximize the window
+		driver.manage().window().maximize();
+		
+		//Wait statement
+		Thread.sleep(2000);
+		
+		//Minimize the window
+		driver.manage().window().minimize();
+		
+		//Wait statement
+		Thread.sleep(2000);
+		
+		//Full screen mode
+		driver.manage().window().fullscreen();
+		
+		//Wait statement
+		Thread.sleep(2000);
+		
+		//Navigate to the application
+		driver.get("https://www.flipkart.com/");
+		
+		
+		//Close the browser
+		driver.quit();
+
+	}
+
+}
+
+============================================================================================================================package basicSeleniumConcepts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LaunchMutipleBrowsers {
+
+	public static void main(String[] args) {
+
+		String key1 = "webdriver.chrome.driver";
+		String value1 = "./chromedriver.exe";
+		
+		System.setProperty(key1, value1);
+		
+		//Launch chrome browser
+		WebDriver driver1 = new ChromeDriver();
+		
+		String key2 = "webdriver.gecko.driver";
+		String value2 = "./geckodriver.exe";
+		
+		System.setProperty(key2, value2);
+		
+		//Launch firefox browser
+		WebDriver driver2 = new FirefoxDriver();
+
+	}
+
+}
+
+============================================================================================================================
