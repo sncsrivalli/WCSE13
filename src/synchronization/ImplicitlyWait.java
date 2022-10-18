@@ -1,17 +1,18 @@
-package loginScript;
+package synchronization;
+
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class InstagramLoginScript {
+public class ImplicitlyWait {
 
 	public static void main(String[] args) {
-		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.instagram.com/");
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String loginPageTitle = driver.getTitle();
 		if(loginPageTitle.equals("Instagram"))
 			System.out.println("Pass : Login page displayed");
@@ -21,7 +22,6 @@ public class InstagramLoginScript {
 		driver.findElement(By.name("password")).sendKeys("manager");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		driver.quit();
-		
 
 	}
 
