@@ -1,0 +1,11 @@
+1. Open the browser, enter amazon.com, type "mac book", write xpath for price of 2021 Apple Mac book Pro
+//span[.='2021 Apple MacBook Pro (16-inch, Apple M1 Pro chip with 10‑core CPU and 16‑core GPU, 16GB RAM, 512GB SSD) - Space Gray']/ancestor::div[@class='a-section a-spacing-small a-spacing-top-small']/descendant::span[@class='a-price']
+
+2. Open the browser, enter icc-cricket.com, click on Team rankings, write xpath for India ratings
+//span[.='India']/parent::td/following-sibling::td[@class='table-body__cell u-text-right rating']
+
+3. Open the browser, enter selenium.dev, click on Downloads, write xpath for API Docs of JavaScript
+
+
+4. Open the browser, enter https://www.bollymoviereviewz.com/2013/04/bollywood-box-office-collection-2013.html, write xpath for box office verdict of Sardaar(Tamil) movie
+
