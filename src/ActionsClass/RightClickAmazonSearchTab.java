@@ -1,4 +1,4 @@
-package dropdowns;
+package ActionsClass;
 
 import java.time.Duration;
 
@@ -6,23 +6,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
 
-public class SelectByVisibleTextPractice {
+public class RightClickAmazonSearchTab {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.ebay.com/");
+		driver.get("https://www.amazon.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		WebElement categoriesDropdown = driver.findElement(By.id("gh-cat"));
-		Select s = new Select(categoriesDropdown);
-		s.selectByVisibleText("Home & Garden");
+		WebElement searchTextField = driver.findElement(By.id("twotabsearchtextbox"));
+		Actions a = new Actions(driver);
+		a.contextClick(searchTextField).perform();
 		
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		
 		driver.quit();
+
 	}
 
 }

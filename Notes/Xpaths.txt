@@ -5,7 +5,9 @@
 //span[.='India']/parent::td/following-sibling::td[@class='table-body__cell u-text-right rating']
 
 3. Open the browser, enter selenium.dev, click on Downloads, write xpath for API Docs of JavaScript
-
+//p[.='JavaScript']/following-sibling::p[3]
+//p[.='JavaScript']/following-sibling::p/a[@href="https://seleniumhq.github.io/selenium/docs/api/javascript/index.html"]
 
 4. Open the browser, enter https://www.bollymoviereviewz.com/2013/04/bollywood-box-office-collection-2013.html, write xpath for box office verdict of Sardaar(Tamil) movie
+//a[.='Sardaar(Tamil)']/parent::td/following-sibling::td[3]
 
