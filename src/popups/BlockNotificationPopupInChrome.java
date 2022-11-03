@@ -11,7 +11,7 @@ public class BlockNotificationPopupInChrome {
 	public static void main(String[] args) throws InterruptedException {
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--disable-notifications");
-		
+		option.setExperimentalOption("excludeSwitches", new String[]{ "enable-automation"} );
 		WebDriver driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
 		driver.get("https://www.ajio.com/");
