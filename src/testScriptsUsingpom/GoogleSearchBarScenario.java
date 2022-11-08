@@ -1,4 +1,4 @@
-package pom;
+package testScriptsUsingpom;
 
 import java.time.Duration;
 
