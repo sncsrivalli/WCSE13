@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Fourth test]]>
+    </line>
+    <line>
+      <![CDATA[Fifth test]]>
+    </line>
+    <line>
+      <![CDATA[First test]]>
+    </line>
+    <line>
+      <![CDATA[Second test]]>
+    </line>
+    <line>
+      <![CDATA[Third test]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-11-09T20:54:16 IST" name="Default suite" finished-at="2022-11-09T20:54:16 IST" duration-ms="136">
+    <groups>
+    </groups>
+    <test started-at="2022-11-09T20:54:16 IST" name="Default test" finished-at="2022-11-09T20:54:16 IST" duration-ms="136">
+      <class name="testNG.SamePriorityObservation">
+        <test-method signature="FourthTest()[pri:1, instance:testNG.SamePriorityObservation@7690781]" started-at="2022-11-09T20:54:16 IST" name="FourthTest" finished-at="2022-11-09T20:54:16 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Fourth test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FourthTest -->
+        <test-method signature="fifthTest()[pri:1, instance:testNG.SamePriorityObservation@7690781]" started-at="2022-11-09T20:54:16 IST" name="fifthTest" finished-at="2022-11-09T20:54:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Fifth test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fifthTest -->
+        <test-method signature="firstTest()[pri:1, instance:testNG.SamePriorityObservation@7690781]" started-at="2022-11-09T20:54:16 IST" name="firstTest" finished-at="2022-11-09T20:54:16 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[First test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+        <test-method signature="secondTest()[pri:1, instance:testNG.SamePriorityObservation@7690781]" started-at="2022-11-09T20:54:16 IST" name="secondTest" finished-at="2022-11-09T20:54:16 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Second test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method signature="thirdTest()[pri:1, instance:testNG.SamePriorityObservation@7690781]" started-at="2022-11-09T20:54:16 IST" name="thirdTest" finished-at="2022-11-09T20:54:16 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Third test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+      </class> <!-- testNG.SamePriorityObservation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
