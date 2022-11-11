@@ -1,37 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test 5]]>
+    </line>
+    <line>
+      <![CDATA[Test 2]]>
+    </line>
+    <line>
+      <![CDATA[Test 4]]>
+    </line>
+    <line>
+      <![CDATA[Test 6]]>
+    </line>
+    <line>
+      <![CDATA[Test 1]]>
+    </line>
+    <line>
+      <![CDATA[Test 3]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-11-10T20:41:02 IST" name="Default suite" finished-at="2022-11-10T20:41:35 IST" duration-ms="32905">
+  <suite started-at="2022-11-11T20:58:58 IST" name="Suite" finished-at="2022-11-11T20:58:59 IST" duration-ms="150">
     <groups>
     </groups>
-    <test started-at="2022-11-10T20:41:02 IST" name="Default test" finished-at="2022-11-10T20:41:35 IST" duration-ms="32905">
-      <class name="testNG.FacebookScriptUsingAnnotations">
-        <test-method is-config="true" signature="methodSetup()[pri:0, instance:testNG.FacebookScriptUsingAnnotations@747edf66]" started-at="2022-11-10T20:41:02 IST" name="methodSetup" finished-at="2022-11-10T20:41:15 IST" duration-ms="12810" status="PASS">
+    <test started-at="2022-11-11T20:58:58 IST" name="Test3" finished-at="2022-11-11T20:58:59 IST" duration-ms="143">
+      <class name="distributedParallelExecution.FifthTest">
+        <test-method signature="fifthTest()[pri:0, instance:distributedParallelExecution.FifthTest@fa49800]" started-at="2022-11-11T20:58:58 IST" name="fifthTest" finished-at="2022-11-11T20:58:58 IST" duration-ms="21" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test 5]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method signature="createAPageTest()[pri:0, instance:testNG.FacebookScriptUsingAnnotations@747edf66]" started-at="2022-11-10T20:41:15 IST" name="createAPageTest" finished-at="2022-11-10T20:41:17 IST" duration-ms="2154" status="PASS">
+        </test-method> <!-- fifthTest -->
+      </class> <!-- distributedParallelExecution.FifthTest -->
+      <class name="distributedParallelExecution.SixthTest">
+        <test-method signature="sixthTest()[pri:0, instance:distributedParallelExecution.SixthTest@71238fc2]" started-at="2022-11-11T20:58:59 IST" name="sixthTest" finished-at="2022-11-11T20:58:59 IST" duration-ms="4" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test 6]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- createAPageTest -->
-        <test-method is-config="true" signature="methodTeardown()[pri:0, instance:testNG.FacebookScriptUsingAnnotations@747edf66]" started-at="2022-11-10T20:41:17 IST" name="methodTeardown" finished-at="2022-11-10T20:41:22 IST" duration-ms="5235" status="PASS">
+        </test-method> <!-- sixthTest -->
+      </class> <!-- distributedParallelExecution.SixthTest -->
+    </test> <!-- Test3 -->
+    <test started-at="2022-11-11T20:58:58 IST" name="Test1" finished-at="2022-11-11T20:58:59 IST" duration-ms="133">
+      <class name="distributedParallelExecution.SecondTest">
+        <test-method signature="secondTest()[pri:0, instance:distributedParallelExecution.SecondTest@4d910fd6]" started-at="2022-11-11T20:58:58 IST" name="secondTest" finished-at="2022-11-11T20:58:58 IST" duration-ms="21" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test 2]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- methodTeardown -->
-        <test-method is-config="true" signature="methodSetup()[pri:0, instance:testNG.FacebookScriptUsingAnnotations@747edf66]" started-at="2022-11-10T20:41:22 IST" name="methodSetup" finished-at="2022-11-10T20:41:28 IST" duration-ms="6408" status="PASS">
+        </test-method> <!-- secondTest -->
+      </class> <!-- distributedParallelExecution.SecondTest -->
+      <class name="distributedParallelExecution.FirstTest">
+        <test-method signature="firstTest()[pri:0, instance:distributedParallelExecution.FirstTest@5fd4f8f5]" started-at="2022-11-11T20:58:59 IST" name="firstTest" finished-at="2022-11-11T20:58:59 IST" duration-ms="6" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test 1]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method signature="forgottenPasswordTest()[pri:0, instance:testNG.FacebookScriptUsingAnnotations@747edf66]" started-at="2022-11-10T20:41:28 IST" name="forgottenPasswordTest" finished-at="2022-11-10T20:41:31 IST" duration-ms="2727" status="PASS">
+        </test-method> <!-- firstTest -->
+      </class> <!-- distributedParallelExecution.FirstTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2022-11-11T20:58:58 IST" name="Test2" finished-at="2022-11-11T20:58:59 IST" duration-ms="150">
+      <class name="distributedParallelExecution.ThirdTest">
+        <test-method signature="thirdTest()[pri:0, instance:distributedParallelExecution.ThirdTest@32b260fa]" started-at="2022-11-11T20:58:59 IST" name="thirdTest" finished-at="2022-11-11T20:58:59 IST" duration-ms="16" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test 3]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- forgottenPasswordTest -->
-        <test-method is-config="true" signature="methodTeardown()[pri:0, instance:testNG.FacebookScriptUsingAnnotations@747edf66]" started-at="2022-11-10T20:41:31 IST" name="methodTeardown" finished-at="2022-11-10T20:41:35 IST" duration-ms="3442" status="PASS">
+        </test-method> <!-- thirdTest -->
+      </class> <!-- distributedParallelExecution.ThirdTest -->
+      <class name="distributedParallelExecution.FourthTest">
+        <test-method signature="fourthTest()[pri:0, instance:distributedParallelExecution.FourthTest@1b1426f4]" started-at="2022-11-11T20:58:58 IST" name="fourthTest" finished-at="2022-11-11T20:58:58 IST" duration-ms="20" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test 4]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- methodTeardown -->
-      </class> <!-- testNG.FacebookScriptUsingAnnotations -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- fourthTest -->
+      </class> <!-- distributedParallelExecution.FourthTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
