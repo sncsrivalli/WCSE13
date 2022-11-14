@@ -27,8 +27,8 @@ public class SoftAssertPractice {
 		String title = driver.getTitle();
 		Reporter.log(title, true);
 		SoftAssert soft = new SoftAssert();
-		soft.assertEquals(title, "Hello");
-		soft.assertEquals(true, false);
+		soft.assertEquals(title, "Facebook – log in or sign up");
+		soft.assertEquals(true, true);
 		Reporter.log(driver.getCurrentUrl(), true);
 		soft.assertAll();
 	}
