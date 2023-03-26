@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 //cross browser parallel
 public class FirstTest {
 	public WebDriver driver;
+	//This parameters are coming from xml
 	@Parameters("Browser")
 	@Test
 	public void demoTest(String browser) {
