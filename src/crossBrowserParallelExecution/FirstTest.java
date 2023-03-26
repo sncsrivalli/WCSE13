@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
+//cross browser parallel
 public class FirstTest {
 	public WebDriver driver;
 	@Parameters("Browser")
